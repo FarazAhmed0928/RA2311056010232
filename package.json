@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/FarazAhmed0928/RA2311056010232#readme",
   "dependencies": {
+    "axios": "^1.15.2",
+    "dotenv": "^17.4.2",
     "express": "^5.2.1"
   }
 }
