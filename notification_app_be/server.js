@@ -2,11 +2,11 @@ require('dotenv').config()
 const express = require('express')
 const axios = require('axios')
 
-const logger = require('./logger')
-app.use(logger)
-
 const app = express()
 app.use(express.json())
+
+const logger = require('./logger')
+app.use(logger)
 
 const TOKEN = process.env.ACCESS_TOKEN
 const BASE_URL = 'http://20.207.122.201/evaluation-service'
