@@ -2,6 +2,9 @@ require('dotenv').config()
 const express = require('express')
 const axios = require('axios')
 
+const logger = require('./logger')
+app.use(logger)
+
 const app = express()
 app.use(express.json())
 

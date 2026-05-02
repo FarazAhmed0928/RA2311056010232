@@ -3,6 +3,9 @@ const express = require('express')
 const { fetchDepots, fetchVehicles } = require('./apiservice')
 const { runScheduler } = require('./scheduler')
 
+const logger = require('./logger')
+app.use(logger)
+
 const app = express()
 app.use(express.json())
 
